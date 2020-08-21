@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- development
+
+jobs:
+- job: armkit_generate
+  timeoutInMinutes: 10
+  pool:
+    vmImage: 'ubuntu-18.04'
+  steps:
+    # Node.js tool installer
+    # Finds or downloads and caches the specified version spec of Node.js and adds it to the PATH
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '13.x' 
+        checkLatest: true
+    # armkit generate run      
+    - bash: |
+        set -x
+        yarn install
+        yarn build
+        cd examples/basic && yarn generate
+      displayName: 'Run armkit generate' 
+
