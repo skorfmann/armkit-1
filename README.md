@@ -1,9 +1,14 @@
 
 # Armkit (Azure Cloud Development Kit)
 
+> This experimental repository contains software which is still being developed
+> and in the alpha testing stage. It is not ready for production use.
+
 ![Build Status](TBD)
 [![Join the chat at https://gitter.im/Armkit/armkit](https://badges.gitter.im/Armkit/armkit.svg)](https://gitter.im/Armkit/armkit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![NPM version](https://badge.fury.io/js/armkit.svg)](https://badge.fury.io/js/armkit)
+
+## Overview
 
 The **Armkit (Azure Cloud Development Kit)** is an open-source software development
 framework to define cloud infrastructure in code and provision it through Azure ARM Templates.
