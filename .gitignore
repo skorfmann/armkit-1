@@ -1,0 +1,16 @@
+.jsii
+
+*.js
+!jest.config.js
+!test.js
+*.d.ts
+node_modules
+
+tsconfig.json
+
+**/.DS_Store
+**/.gen
+**/*.log
+**/coverage
+**/dist
+.vscode%
